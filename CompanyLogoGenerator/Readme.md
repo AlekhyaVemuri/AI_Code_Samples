@@ -7,13 +7,13 @@ Designing a compelling and effective company/brand logo is crucial yet time-cons
 
 ## Contents
 
-- Usecase Workflow
-- Pre-requisites
-- Sample structure
-- Run the `Automated Logo Generation` Sample
-   - AI PC
-   - Intel Tiber Cloud
-- Sample Execution
+- [Usecase Workflow](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-workflow)
+- [Pre-requisites](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#pre-requisites)
+- [Sample structure](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-structure)
+- [Run the `Automated Logo Generation` Sample](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-structure)
+   - [AI PC](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#ai-pc)
+   - [Intel Tiber Cloud](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#intel-tiber-cloud)
+- [Sample Execution](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-execution)
 
 
 ## Sample Workflow
@@ -35,7 +35,7 @@ Designing a compelling and effective company/brand logo is crucial yet time-cons
 This Sample directory contains:
 | Notebook                           | Description                                                                                            |
 | :--------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| `AutomatedLogoGeneration.ipynb` | Enables faster and affordable company logo generation using language and diffusion models with the help of automated prompt engineering  |
+| [AutomatedLogoGeneration.ipynb](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Automated_logo_generation.ipynb) | Enables faster and affordable company logo generation using language and diffusion models with the help of automated prompt engineering  |
 
 
 ## Run the `Automated Logo Generation` Sample:
