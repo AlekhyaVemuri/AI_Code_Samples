@@ -2,7 +2,7 @@
 
 ## Overview
 
-Designing a compelling and effective company/brand logo is crucial yet time-consuming and expensive. This usecase explores an AI-driven approach to streamlines logo generation by combining the capabitlities of small language models and diffusion models
+Designing a compelling and effective company/brand logo is crucial yet time-consuming and expensive. This sample explores an AI-driven approach which streamlines logo generation by combining the capabitlities of small language models and diffusion models
 
 
 ## Contents
@@ -16,7 +16,7 @@ Designing a compelling and effective company/brand logo is crucial yet time-cons
 - Sample Execution
 
 
-## Use-case Workflow
+## Sample Workflow
 
 <img width="1000" alt="image" src="./assets/logo_generation.png">
 
