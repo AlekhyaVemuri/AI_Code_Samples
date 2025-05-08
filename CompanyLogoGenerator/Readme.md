@@ -2,21 +2,21 @@
 
 ## Overview
 
-Designing a compelling and effective company/brand logo is crucial yet time-consuming and expensive. This usecase explores an AI-driven approach to streamlines logo generation by combining the capabitlities of small language models and diffusion models
+Designing a compelling and effective company/brand logo is crucial yet time-consuming and expensive. This sample explores an AI-driven approach which streamlines logo generation by combining the capabitlities of small language models and diffusion models
 
 
 ## Contents
 
-- Usecase Workflow
-- Pre-requisites
-- Sample structure
-- Run the `Automated Logo Generation` Sample
-   - AI PC
-   - Intel Tiber Cloud
-- Sample Execution
+- [Usecase Workflow](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-workflow)
+- [Pre-requisites](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#pre-requisites)
+- [Sample structure](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-structure)
+- [Run the `Automated Logo Generation` Sample](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-structure)
+   - [AI PC](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#ai-pc)
+   - [Intel Tiber Cloud](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#intel-tiber-cloud)
+- [Sample Execution](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-execution)
 
 
-## Use-case Workflow
+## Sample Workflow
 
 <img width="1000" alt="image" src="./assets/logo_generation.png">
 
@@ -35,7 +35,7 @@ Designing a compelling and effective company/brand logo is crucial yet time-cons
 This Sample directory contains:
 | Notebook                           | Description                                                                                            |
 | :--------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| `AutomatedLogoGeneration.ipynb` | Enables faster and affordable company logo generation using language and diffusion models with the help of automated prompt engineering  |
+| [AutomatedLogoGeneration.ipynb](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Automated_logo_generation.ipynb) | Enables faster and affordable company logo generation using language and diffusion models with the help of automated prompt engineering  |
 
 
 ## Run the `Automated Logo Generation` Sample:
@@ -49,14 +49,8 @@ Perform the below steps in a terminal
 2. Create a conda environment
    ```bash
    conda create -n diffusers -y
-   ```
-   ```bash
    conda activate diffusers
-   ```
-   ```bash
    python -m ipykernel install --user --name=diffusers
-   ```
-   ```bash
    pip install -r requirements.txt
    ```
 3. Open the [Automated Logo Generation](./Automated_logo_generation.ipynb) notebook file in the jupyter notebook, select the `diffusers` kernel and run the code cells one by one in the notebook.
