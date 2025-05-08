@@ -49,14 +49,8 @@ Perform the below steps in a terminal
 2. Create a conda environment
    ```bash
    conda create -n diffusers -y
-   ```
-   ```bash
    conda activate diffusers
-   ```
-   ```bash
    python -m ipykernel install --user --name=diffusers
-   ```
-   ```bash
    pip install -r requirements.txt
    ```
 3. Open the [Automated Logo Generation](./Automated_logo_generation.ipynb) notebook file in the jupyter notebook, select the `diffusers` kernel and run the code cells one by one in the notebook.
