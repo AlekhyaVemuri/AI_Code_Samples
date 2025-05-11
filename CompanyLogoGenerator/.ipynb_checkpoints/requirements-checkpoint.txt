@@ -1,5 +1,0 @@
-diffusers
-transformers
-jupyter
-ipywidgets
-accelerate
