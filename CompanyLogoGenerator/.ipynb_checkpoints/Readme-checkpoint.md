@@ -2,21 +2,22 @@
 
 ## Overview
 
-Designing a compelling and effective company/brand logo is crucial yet time-consuming and expensive. This usecase explores an AI-driven approach to streamlines logo generation by combining the capabitlities of small language models and diffusion models
+Designing a compelling and effective company/brand logo is crucial yet time-consuming and expensive. This sample explores an AI-driven approach which streamlines logo generation by combining the capabitlities of small language models and diffusion models
 
 
 ## Contents
 
-- Usecase Workflow
-- Pre-requisites
-- Sample structure
-- Run the `Automated Logo Generation` Sample
-   - AI PC
-   - Intel Tiber Cloud
-- Sample Execution
+- [Usecase Workflow](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-workflow)
+- [Pre-requisites](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#pre-requisites)
+- [Sample structure](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-structure)
+- [Run the `Automated Logo Generation` Sample](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-structure)
+   - [Using `uv`](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#using-uv)
+   - [AI PC](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#ai-pc)
+   - [Intel Tiber Cloud](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#intel-tiber-cloud)
+- [Sample Execution](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Readme.md#sample-execution)
 
 
-## Use-case Workflow
+## Sample Workflow
 
 <img width="1000" alt="image" src="./assets/logo_generation.png">
 
@@ -27,7 +28,9 @@ Designing a compelling and effective company/brand logo is crucial yet time-cons
 | :----------------------------------| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | OS                        | Windows 11 64-bit (22H2, 23H2) and newer or Ubuntu* 22.04 64-bit (with Linux kernel 6.6+) and newer                                                                                                                                                                                                              |
 | Hardware                  | Intel® Core™ Ultra Processors, Intel Arc™ Graphics, or Intel Graphics, Intel® Data Center GPU Max Series                                                                                                                                                                                                         |
-| Software                  | [Intel® GPU drivers from Intel® Arc™ & Iris® Xe Graphics for Windows](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)                                                                                                                  |
+| Software                  | [Intel® GPU drivers from Intel® Arc™ & Iris® Xe Graphics for Windows](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html), [uv](https://docs.astral.sh/uv/)                                                                                                                                                                                      |
+| Optional                  | Monitor GPU Utilization using [Intel XPU Manager](https://github.com/intel/xpumanager)
+                                                                                     
 
 
 ## Sample Structure
@@ -35,31 +38,35 @@ Designing a compelling and effective company/brand logo is crucial yet time-cons
 This Sample directory contains:
 | Notebook                           | Description                                                                                            |
 | :--------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| `AutomatedLogoGeneration.ipynb` | Enables faster and affordable company logo generation using language and diffusion models with the help of automated prompt engineering  |
+| [AutomatedLogoGeneration.ipynb](https://github.com/AlekhyaVemuri/AI_Code_Samples/blob/main/CompanyLogoGenerator/Automated_logo_generation.ipynb) | Enables faster and affordable company logo generation using language and diffusion models with the help of automated prompt engineering  |
 
 
 ## Run the `Automated Logo Generation` Sample:
 
+### Using `uv`:
+The sample uses [uv](https://docs.astral.sh/uv/) for environment management. Steps to install `uv` can be found [here](https://docs.astral.sh/uv/getting-started/installation/).
+1. Setup the environment
+   ```bash
+   uv venv diffusers
+   diffusers\Scripts\activate
+   uv init
+   ```
+2. Install Dependencies
+   ```bash
+   uv add --active -r requirements.txt
+   uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
+   ```
+3. Open Jupyter Notebook
+   ```bash
+   uv run --active ipython kernel install --user --env VIRTUAL_ENV $(pwd)/diffusers --name=diffusers_uv
+   uv run --active --with jupyter jupyter lab
+   ```
+
 ### AI PC
+
 Perform the below steps in a terminal
-1. Install PyTorch for Intel XPUs. Refer [this documentation](https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html) for more information.
-   ```bash
-   pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
-   ```
-2. Create a conda environment
-   ```bash
-   conda create -n diffusers -y
-   ```
-   ```bash
-   conda activate diffusers
-   ```
-   ```bash
-   python -m ipykernel install --user --name=diffusers
-   ```
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Open the [Automated Logo Generation](./Automated_logo_generation.ipynb) notebook file in the jupyter notebook, select the `diffusers` kernel and run the code cells one by one in the notebook.
+
+1. Open the [Automated Logo Generation](./Automated_logo_generation.ipynb) notebook file in the jupyter notebook, select the `diffusers_uv` kernel and run the code cells one by one in the notebook.
 
 
 ### Intel Tiber Cloud
@@ -71,7 +78,7 @@ Perform the below steps in a terminal
 ## Sample Execution
 Users would be observing GPU utilization as this sample runs is optimized to run on Intel XPUs
 
-<img alt="image" width=600 src="./assets/gpu_usage.png"/>
+<img alt="image" width=600 src="./assets/gpu_usage_xpum.png"/>
 
 ### Few-shot Prompt Generation using SLM
 Enhancing small language model's capabilities with the help of few-shot prompting strategy, image diffusion prompt is generated from a textual company/brand information
