@@ -12,7 +12,8 @@ Designing a compelling and effective company/brand logo is crucial yet time-cons
 - [Sample structure](./Readme.md#sample-structure)
 - [Run the `Automated Logo Generation` Sample](./Readme.md#sample-structure)
    - [Using `uv`](./Readme.md#using-uv)
-   - [AI PC](./Readme.md#ai-pc)
+   - [AI PC from Intel](./Readme.md#ai-pc-from-intel)
+   - [Intel® Tiber™ AI Cloud](./Readme.md#intel-tiber-ai-cloud)
 - [Sample Execution](./Readme.md#sample-execution)
 
 
@@ -79,11 +80,13 @@ The sample uses [uv](https://docs.astral.sh/uv/) for environment management. Ste
    uv run --active --with jupyter jupyter lab
    ```
 
-### AI PC
+### AI PC from Intel
 <div class="alert alert-block alert-info"> <b>NOTE:</b> You can run the step on both, <b>Windows and Ubuntu</b>. </div>
 
 1. Open the [Automated Logo Generation](./Automated_Logo_Generation.ipynb) notebook file in the jupyter notebook, select the `diffusers_uv` kernel and run the code cells one by one in the notebook.
 
+### Intel Tiber AI Cloud
+1. Open the [Automated Logo Generation](./Automated_Logo_Generation.ipynb) notebook file in the jupyter notebook, select the `diffusers_uv` kernel and run the code cells one by one in the notebook.
 
 ## Sample Execution
 Users would be observing GPU utilization as this sample runs is optimized to run on Intel XPUs
