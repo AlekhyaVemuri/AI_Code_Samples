@@ -46,39 +46,41 @@ This Sample directory contains:
 ### Using `uv`:
 The sample uses [uv](https://docs.astral.sh/uv/) for environment management. Steps to install `uv` can be found [here](https://docs.astral.sh/uv/getting-started/installation/).
 > 
-1. Setup the environment - create a new environment and initialize uv project.
-   ```bash
-   uv venv diffusers
-   ```
-   - For Windows:
-   ```bash
-   diffusers\Scripts\activate
-   ```
-   - For Ubuntu:
-   ```bash
-   source diffusers/bin/activate
-   ```
-   ```bash
-   uv init
-   ```
-3. Install Dependencies
+1. Setup the environment
+   - Create a new virtual environment
+        ```bash
+        uv venv diffusers
+        ```
+   - Activate the environment
+       - For Windows:
+          ```bash
+           diffusers\Scripts\activate
+           ```
+       - For Ubuntu:
+         ```bash
+         source diffusers/bin/activate
+         ```
+   - Initialize the environment
+       ```bash
+       uv init
+       ```
+2. Install Dependencies
    ```bash
    cd <path/to/Automated_Logo_Generator>
-   uv add --active -r requirements.txt
    uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
+   uv add --active -r requirements.txt
    ```
-4. Install Jupyter Kernel from Virtual Environment
+3. Install Jupyter Kernel from Virtual Environment
    ```bash
    uv run --active ipython kernel install --user --env VIRTUAL_ENV $(pwd)/diffusers --name=diffusers_uv
    ```
-5. Launch Jupyter Notebook
+4s. Launch Jupyter Notebook
    ```bash
    uv run --active --with jupyter jupyter lab
    ```
 
 ### AI PC
 <div class="alert alert-block alert-info"> <b>NOTE:</b> You can run the step on both, <b>Windows and Ubuntu</b>. </div>
-
 
 1. Open the [Automated Logo Generation](./Automated_Logo_Generation.ipynb) notebook file in the jupyter notebook, select the `diffusers_uv` kernel and run the code cells one by one in the notebook.
 
