@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+logos/
+pyproject.toml
+uv.lock
+diffusers
+.venv
+.python-version
