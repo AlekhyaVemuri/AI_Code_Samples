@@ -48,34 +48,12 @@ This Sample directory contains:
 The sample uses [uv](https://docs.astral.sh/uv/) for environment management. Steps to install `uv` can be found [here](https://docs.astral.sh/uv/getting-started/installation/).
 > 
 1. Setup the environment
-   - Create a new virtual environment
-        ```bash
-        uv venv diffusers
-        ```
-   - Activate the environment
-       - For Windows:
-          ```bash
-           diffusers\Scripts\activate
-           ```
-       - For Ubuntu:
-         ```bash
-         source diffusers/bin/activate
-         ```
    - Initialize the environment
        ```bash
        uv init
        ```
-2. Install Dependencies
-   ```bash
-   cd <path/to/Automated_Logo_Generator>
-   uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
-   uv add --active -r requirements.txt
-   ```
-3. Install Jupyter Kernel from Virtual Environment
-   ```bash
-   uv run --active ipython kernel install --user --env VIRTUAL_ENV $(pwd)/diffusers --name=diffusers_uv
-   ```
-4s. Launch Jupyter Notebook
+   
+2. Launch Jupyter Notebook
    ```bash
    uv run --active --with jupyter jupyter lab
    ```
