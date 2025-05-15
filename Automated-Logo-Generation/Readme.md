@@ -46,7 +46,7 @@ This Sample directory contains:
 
 ### Using `uv`:
 The sample uses [uv](https://docs.astral.sh/uv/) for environment management. Steps to install `uv` can be found [here](https://docs.astral.sh/uv/getting-started/installation/).
-> 
+
 1. Setup the environment
    - Initialize the environment
        ```bash
@@ -55,16 +55,16 @@ The sample uses [uv](https://docs.astral.sh/uv/) for environment management. Ste
    
 2. Launch Jupyter Notebook
    ```bash
-   uv run --active --with jupyter jupyter lab
+   uv run jupyter lab
    ```
 
 ### AI PC from Intel
 <div class="alert alert-block alert-info"> <b>NOTE:</b> You can run the step on both, <b>Windows and Ubuntu</b>. </div>
 
-1. Open the [Automated Logo Generation](./Automated_Logo_Generation.ipynb) notebook file in the jupyter notebook, select the `diffusers_uv` kernel and run the code cells one by one in the notebook.
+1. Open the [Automated Logo Generation](./Automated_Logo_Generation.ipynb) notebook file in the jupyter notebook, select the default kernel i.e. `Python(ipykernel)` and run the code cells one by one in the notebook.
 
 ### Intel Tiber AI Cloud
-1. Open the [Automated Logo Generation](./Automated_Logo_Generation.ipynb) notebook file in the jupyter notebook, select the `diffusers_uv` kernel and run the code cells one by one in the notebook.
+1. Open the [Automated Logo Generation](./Automated_Logo_Generation.ipynb) notebook file in the jupyter notebook, select the default kernel i.e. `Python(ipykernel)` and run the code cells one by one in the notebook.
 
 ## Sample Execution
 Users would be observing GPU utilization as this sample runs is optimized to run on Intel XPUs
